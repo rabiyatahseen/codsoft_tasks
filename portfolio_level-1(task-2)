@@ -1,1 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --primary-color: #ff7613;
+        --text-color: #727171;
+      }
+      /* Basic page style resets */
+      html {
+        font-size: 10px;
+      }
+      body {
+        font-family: HK Grotesk, sans-serif;
+        background-color: black;
+        color: white;
+      }
+      /* Import fonts */
+      @font-face {
+        font-family: HK Grotesk;
+        src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+          format("opentype");
+      }
+      @font-face {
+        font-family: HK Grotesk;
+        font-weight: bold;
+        src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+          format("opentype");
+      }
+      /*common styles*/
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .description {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      .tittle {
+        color: pink;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: 0.8rem;
+      }
+      .item_pretittle {
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 300;
+      }
+      .item_tittle {
+        font-size: 1.4rem;
+        color: white;
+        font-weight: 500;
+      }
+      .item_subtittle {
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 100;
+      }
+      /*layouts*/
+      .container {
+        max-width: 1000px;
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        padding: 5rem;
+        background: #070707;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+      }
+      @media only screen and (max-width: 768px) {
+        .container {
+          width: 100%;
+          grid-template-columns: 1fr;
+          padding: 3rem;
+          gap: 7rem;
+        }
+      }
+      .profiler {
+        grid-column: 1 / -1;
+        margin-bottom: 2rem;
+      }
+      /*profile*/
+      .profile_container {
+        display: flex;
+        gap: 2rem;
+      }
+      .profile_profileImg {
+        max-width: 250px;
+      }
+      .profile_name_firstName {
+        color: white;
+        font-weight: 200;
+        font-size: clamp(2rem, 8vw, 4rem);
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: -0.8rem;
+      }
+      .profile_name_lastName {
+        color: pink;
+        font-weight: 700;
+        font-size: clamp(2.5rem, 15vw, 7rem);
+        text-transform: uppercase;
+        display: block;
+      }
+      .profile_tittle {
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      /*soft skills*/
+      .skill_list {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        line-height: 2rem;
+      }
+      /* education */
+      .edu_item {
+        margin-top: 2rem;
+      }
+      /*certification*/
+      .certification_item {
+        margin-top: 2rem;
+      }
+      /*personal details*/
+      .det_item {
+        margin-top: 2rem;
+      }
+      /*interest*/
+      .interest_items {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+      }
+      .interest_item {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+    </style>
+
+    <title>Resume</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    
+    <script src="/script.js" defer></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <div class="profile_container">
+          <div class="profile_profileImg">
+            <img
+              src="https://cdn.glitch.global/41bafe75-5d67-4b8f-aad8-cafa81847837/WhatsApp%20Image%202024-09-12%20at%2012.46.26%20AM.jpeg?v=1726082216034"
+              alt="rabiya tahseen"
+            />
+          </div>
+        </div>
+        <h1 class="profile_name">
+          <span class="profile_name_firstName">rabiya</span>
+          <span class="profile_name_lastName">tahseen</span>
+        </h1>
+        <h2>Computer Science Engineer</h2>
+        <p class="description">
+          Motivated computer science engineer with a solid foundation in
+          algorithms,data structure, strong problem solving abilities and
+          passion for continuous learning and innovation.
+        </p>
+      </div>
+    </div>
+    <div align="center" class="group-1">
+      <div class="details">
+        <h3 class="tittle">Personal Details</h3>
+        <div class="det_item">
+          <p class="item_tittle">Name: Rabiya Tahseen</p>
+          <p class="item_pretittle">DOB: Sep 25,2005</p>
+          <p class="item_pretittle">AGE: 19</p>
+          <p class="item_pretittle">Civil Status:Single</p>
+          <p class="item_pretittle">Father Name: Zakir Hussain</p>
+          <p class="item_pretittle">Mother Name: Kousar Fathima</p>
+          <p class="item_pretittle">siblings: Zakiya Tahseen</p>
+          <p class="item_pretittle">Religion: Indian Muslim</p>
+          <p class="item_pretittle">Hobbies: Travelling,Painting</p>
+          <p class="item_pretittle">languages: English,Hindi,Telugu</p>
+          <p class="item_pretittle">Tecnical Skills: Programming,Typing</p>
+          <p class="item_pretittle">E-Mail id: rabiyatahseen@gmail.com</p>
+          <p class="item_pretittle">Phone no: *******902</p>
+          <p class="item_pretittle">
+            Address: Opp zph highschool,road no:4,Akividu
+          </p>
+          <div class="Objective">
+            <h3 class="tittle">Objective</h3>
+            <p class="description">
+              To be sucessfull and perform my best through out my career.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="edu">
+        <h3 class="tittle">Education</h3>
+        <div class="edu_item">
+          <p class="item_pretittle">2020-2021</p>
+          <h4 class="item_tittle">10th</h4>
+          <p class="item_subtittle">Narayana E.M School</p>
+          <p class="item_subtittle">Akividu</p>
+        </div>
+      </div>
+      <div class="edu_item">
+        <p class="item_pretittle">2021-2023</p>
+        <h4 class="item_tittle">Intermediate</h4>
+        <p class="item_subtittle">Narayana Junior College</p>
+        <p class="item_subtittle">Bhimvaram</p>
+      </div>
+      <div class="edu_item">
+        <p class="item_pretittle">2023-2027</p>
+        <h4 class="item_tittle">B.Tech</h4>
+        <p class="item_subtittle">Vishnu Institute Of Technology</p>
+        <p class="item_subtittle">Bhimvaram</p>
+      </div>
+      <div class="skills">
+        <h3 class="tittle">Soft Skills</h3>
+        <div class="skill_list_description">
+          <li>Communication</li>
+          <li>Teamwork</li>
+          <li>Problem Solving</li>
+          <li>Time Management</li>
+          <li>Leadership</li>
+          <li>Adaptability</li>
+          <li>Critical Thinking</li>
+        </div>
+      </div>
+      <div class="certification">
+        <h3 class="tittle">Certification</h3>
+        <div class="certification_item">
+          <p class="item_pretittle">2023</p>
+          <h4 class="item_tittle">Professional Development Certificate</h4>
+          <p class="item_subtittle">* Self Assessment</p>
+          <p class="item_subtittle">* Problem Solving and Critical Thinking</p>
+          <h4 class="item_tittle">Computer Science 101</h4>
+          <h6 class="item_subtittle">Platform: EDX</h6>
+          <h4 class="item_tittle">* 3 Participations In Internal HACKTHONS</h4>
+          <h6 class="item_subtittle">GOT 2nd:awarded with cash price</h6>
+        </div>
+      </div>
+      <div class="professionalnetworksites">
+         <h3 class="tittle">Professional Network Sites</h3>
+        <div class="professionalnetworksites_item">
+          <p class="item_pretittle">LinkedIn:</p>
+            <p class="item_subtittle">www.linkedin.com/in/rabiya-tahseen</p>
+       <p class="item_pretittle">GitHub:</p>
+           <p class="item_subtittle">https://github.com/rabiyatahseen</p>
+        </div>
+      </div>
+      <div align="center" class="interest">
+        <h3 class="tittle">Interest</h3>
+        <div class="interest_items">
+          <div class="interest_item">
+            <i data-feather="music"></i>
+            <span>Music</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="book"></i>
+            <span>Book</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="map"></i>
+            <span>Travel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
 
