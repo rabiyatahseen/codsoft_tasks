@@ -1,0 +1,170 @@
+HTML CODE:
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Tribute Website | jawaharlal nehru</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <section class="top_section">
+          <div class="image_container">
+            <img
+              src="https://cdn.glitch.global/d31afe26-8ddf-4480-bfc0-539b189bba81/picture.jpeg?v=1726932901687"
+            />
+          </div>
+          <div>
+            <h1>Jawaharlal Nehru</h1>
+            <h4>1889 to 1964</h4>
+          </div>
+        </section>
+        <section class="about_section">
+          <h2>The Architect Of Modern India</h2>
+          <p>
+            Jawaharlal Nehru, often hailed as the "Architect of Modern India,"
+            played a pivotal role in shaping the nation's destiny after
+            independence. His vision and leadership were instrumental in laying
+            the foundations for a secular, democratic, and socialist republic.
+            Nehru's policies focused on industrialization, education, and social
+            reforms, aiming to build a modern India that could compete on the
+            global stage. His legacy is evident in the nation's democratic
+            institutions, scientific advancements, and cultural diversity.
+          </p>
+          <h3>Early Life and Education</h3>
+          <p>
+            Birth and childhood in Allahabad Education at Harrow School and
+            Trinity College, Cambridge Involvement in Indian nationalism during
+            his student days
+          </p>
+
+          <h3>Political Career</h3>
+          <ul>
+            <li>
+              Return to India and involvement in the Indian National Congress
+            </li>
+            <li>
+              Participation in the Non-Cooperation Movement and Civil
+              Disobedience Movement
+            </li>
+            <li>Imprisonment for his political activities</li>
+            <li>Role in the Indian independence movement</li>
+            <li>
+              Leadership of the Indian National Congress after Gandhi's
+              assassination
+            </li>
+            <li>First Prime Minister of independent India</li>
+          </ul>
+
+          <h3>Vision for Modern India</h3>
+          <ul>
+            <li>Secularism and religious tolerance</li>
+            <li>Democracy and democratic</li>
+            <li>institutions Social justice and equality</li>
+            <li>Economic development and industrialization</li>
+            <li>Foreign policy and non-alignment</li>
+          </ul>
+          <h3>Achievements,Challenges and Controversies</h3>
+          <ul>
+            <li>-Drafting and implementation of the Indian Constitution</li>
+            <li>-Establishment of a secular and democratic republic</li>
+            <li>-Industrialization and economic development</li>
+            <li>-Promotion of education and scientific research</li>
+            <li>-Kashmir issue</li>
+            <li>-Sino-Indian War</li>
+            <li>-Indo-Pakistani Wars</li>
+            <li>-Economic challenges and planning</li>
+            <li>-Personal criticisms and controversies</li>
+          </ul>
+          <h3>Legacy</h3>
+          <ul>
+            <li>Architect of modern India</li>
+            <li>Champion of democracy, secularism, and social justice</li>
+            <li>Promoter of education, science, and culture</li>
+            <li>
+              Influence on Indian foreign policy and international relations
+            </li>
+            <li>Continued relevance and impact on India's development</li>
+          </ul>
+          <h3>
+            "Every country has a right to choose its own way of life and to
+            build its own society."
+          </h3>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+CSS CODE:
+
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: white;
+
+  min-height: 100vh;
+
+  border: 10px solid #1d1e4c;
+}
+.top_section h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: black;
+}
+.top_section h4 {
+  font-size: 30px;
+  text-align: end;
+}
+.content {
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+.top_section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.image_container,
+img {
+  width: 300px;
+  height: 320px;
+}
+.about_section {
+  margin-top: 50px;
+  justify-content: center;
+}
+.about_section h2 {
+  font-size: 70px;
+  font-weight: 400;
+  font: monospace;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.about_section p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.about_section h3 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
